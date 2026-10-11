@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600">
+ <title>Caustiq second moment beam propagation measurement</title>
+ <desc>Original schematic showing a laser, a focusing lens, a translated detector plane and two beam waists. Not to scale.</desc>
+ <defs>
+  <linearGradient id="beam" x2="0" y2="1"><stop stop-color="#EC4646" stop-opacity=".08"/><stop offset=".5" stop-color="#EC4646" stop-opacity=".38"/><stop offset="1" stop-color="#EC4646" stop-opacity=".08"/></linearGradient>
+  <linearGradient id="glass"><stop stop-color="#E7F9FF"/><stop offset=".5" stop-color="#93D8ED"/><stop offset="1" stop-color="#E7F9FF"/></linearGradient>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#496275"/></marker>
+ </defs>
+ <rect width="1600" height="600" fill="#FFFFFF"/>
+ <g font-family="Segoe UI, Arial, sans-serif" fill="#18344B">
+  <text x="55" y="65" font-size="28" font-weight="600">Beam propagation measurement</text>
+  <text x="1545" y="65" font-size="18" text-anchor="end" fill="#637784">SCHEMATIC · NOT TO SCALE</text>
+  <path d="M240 258 Q365 278 480 296 Q635 285 800 210 L800 390 Q635 315 480 304 Q365 322 240 342Z" fill="url(#beam)"/>
+  <path d="M800 210 L1088 296 L1472 240 L1472 360 L1088 304 L800 390Z" fill="url(#beam)"/>
+  <path d="M240 258 Q365 278 480 296 Q635 285 800 210 M240 342 Q365 322 480 304 Q635 315 800 390 M800 210 L1088 296 L1472 240 M800 390 L1088 304 L1472 360" fill="none" stroke="#DF4B4B" stroke-width="3"/>
+  <path d="M240 300 H1540" stroke="#8796A0" stroke-width="2" stroke-dasharray="10 8"/>
+  <rect x="55" y="227" width="183" height="146" rx="15" fill="#17344C"/>
+  <path d="M75 249 H154 M75 261 H154 M75 273 H154" stroke="#456176" stroke-width="5"/>
+  <rect x="225" y="258" width="22" height="84" rx="7" fill="#0B1E2C"/>
+  <text x="145" y="326" text-anchor="middle" font-size="28" fill="#FFFFFF">LASER</text>
+  <ellipse cx="800" cy="300" rx="24" ry="138" fill="url(#glass)" fill-opacity=".82" stroke="#228AAF" stroke-width="4"/>
+  <path d="M800 170 V116" stroke="#496275" stroke-width="2"/>
+  <text x="800" y="105" text-anchor="middle" font-size="25" font-weight="600">Focusing lens</text>
+  <rect x="1462" y="216" width="34" height="168" rx="5" fill="#17344C"/>
+  <rect x="1469" y="236" width="10" height="128" fill="#E99694"/>
+  <path d="M1365 146 H1428 L1471 231" fill="none" stroke="#496275" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="1280" y="115" font-size="25" font-weight="600">Detector surface</text>
+  <path d="M480 304 V416 M1088 304 V416" stroke="#8796A0" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="480" y="449" text-anchor="middle" font-size="23">Original waist</text>
+  <text x="1088" y="449" text-anchor="middle" font-size="23">Focused waist</text>
+  <path d="M930 483 H1435" stroke="#228AAF" stroke-width="3" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="1182" y="517" text-anchor="middle" font-size="21">Sample multiple detector positions along z</text>
+  <text x="55" y="562" font-size="21">Intensity images</text><text x="305" y="562" font-size="21">→  D4σ widths</text><text x="605" y="562" font-size="21">→  Propagation fit</text><text x="965" y="562" font-size="21">→  M² and beam parameters</text>
+ </g>
+</svg>

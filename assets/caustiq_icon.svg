@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>Caustiq beam waist icon</title>
+  <desc>Two cyan beam envelopes converge on an amber waist on a navy rounded square.</desc>
+  <defs>
+    <linearGradient id="bg" x2="0.8" y2="1"><stop stop-color="#142B43"/><stop offset="1" stop-color="#081420"/></linearGradient>
+    <linearGradient id="beam" x2="1" y2="0"><stop stop-color="#39C9EF"/><stop offset=".5" stop-color="#B8F8FF"/><stop offset="1" stop-color="#39C9EF"/></linearGradient>
+  </defs>
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="url(#bg)"/>
+  <path d="M88 118 C167 145 208 218 256 218 C304 218 345 145 424 118 L424 394 C345 367 304 294 256 294 C208 294 167 367 88 394 Z" fill="#36C9EE" fill-opacity=".12"/>
+  <path d="M88 118 C167 145 208 218 256 218 C304 218 345 145 424 118 M88 394 C167 367 208 294 256 294 C304 294 345 367 424 394" fill="none" stroke="url(#beam)" stroke-width="25" stroke-linecap="round"/>
+  <path d="M87 256 H425" stroke="#3287A1" stroke-width="9" stroke-linecap="round"/>
+  <path d="M256 185 V327" stroke="#FFBB55" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="256" cy="256" r="24" fill="#FFBB55"/>
+  <circle cx="256" cy="256" r="9" fill="#FFFFFF"/>
+</svg>

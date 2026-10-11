@@ -1,0 +1,7 @@
+# Third-party dependencies (source release)
+
+The source code declares runtime dependencies in `requirements.txt`: NumPy, pandas, SciPy, Matplotlib, Pillow, and PySide6-Essentials (which uses Qt and Shiboken). These are **not** covered by this project's MIT license. Installing them obtains separately licensed distributions and transitive dependencies. Consult the license and notice files supplied with the exact installed versions. The `third_party_licenses/` folder preserves the collected Python, Qt LGPL/GPL, PyInstaller, and Inno Setup texts; it does not replace the license files of every installed dependency.
+
+Official project/license sources: [NumPy](https://numpy.org/about/), [pandas](https://pandas.pydata.org/about/citing.html), [SciPy](https://scipy.org/about/), [Matplotlib](https://matplotlib.org/stable/project/license.html), [Pillow](https://github.com/python-pillow/Pillow/blob/main/LICENSE), and [Qt for Python](https://doc.qt.io/qtforpython-6/licenses.html).
+
+The optional Windows packaging workflow uses [PyInstaller](https://pyinstaller.org/en/stable/license.html) and [Inno Setup](https://jrsoftware.org/isinfo.php), each under its own terms. A binary distributor must identify the actual packaged versions and include all required notices/license texts, as well as satisfy any corresponding-source and library-replacement obligations for LGPL-covered components. This document is a source-repository notice, **not** a completed binary compliance audit.
