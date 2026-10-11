@@ -2,7 +2,13 @@
 
 Caustiq is an independent, open-source desktop tool for beam profiling and M² analysis. It accepts Z-positioned beam-width CSV measurements or image sequences, fits X/Y caustics, and displays 2D spot and 3D point-cloud previews. The Test Principle window uses the project-authored optical schematic in `assets/`.
 
-This repository is a **source release**. It contains no installer, bundled wheels, vendor manual, proprietary SDK, or experimental measurement data. The CSV files in `sample_data/` are mathematically generated examples, not calibration records. No binary release is included.
+This repository contains the **source code**. It does not contain bundled wheels, vendor manuals, proprietary SDKs, or experimental measurement data. The CSV files in `sample_data/` are mathematically generated examples, not calibration records. An optional unsigned Windows installer and English manual are available in the [v2.4.2 pre-release](https://github.com/Terrenceeeeeee/Caustiq/releases/tag/v2.4.2).
+
+## Windows installer (pre-release)
+
+Download the [Windows x64 installer](https://github.com/Terrenceeeeeee/Caustiq/releases/download/v2.4.2/Caustiq_2.4.2_Setup_x64.exe) and [English user manual](https://github.com/Terrenceeeeeee/Caustiq/releases/download/v2.4.2/Caustiq_2.4.2_User_Manual_EN.pdf). The release also includes `SHA256.txt`, an editable DOCX manual, and a supporting archive with notices, exact-version license texts, and original assets. Verify the installer against `SHA256.txt` before use; on Windows, `Get-FileHash .\Caustiq_2.4.2_Setup_x64.exe -Algorithm SHA256` computes its checksum.
+
+**Important:** the installer is not digitally signed, and clean-machine installation/uninstallation has not been validated. If Windows application-control policy blocks it, do not bypass security controls; use an authorized signing or IT process. The standalone application passed an offline self-test, but this is not proof that the installer works on every machine. See the [pre-release notes](https://github.com/Terrenceeeeeee/Caustiq/releases/tag/v2.4.2) and [legal notice](LEGAL_NOTICE.md).
 
 ## Run from source
 
@@ -29,7 +35,7 @@ The equations, units, assumptions, and interpretation of the ancillary metrics a
 
 ## Packaging
 
-Windows build scripts live in `packaging/windows/`. They are starting points for a source-based build, not a pre-audited binary release. Before distributing an installer, independently test it on a clean Windows machine and review the exact bundled dependency licenses and LGPL obligations. See [Public release checklist](PUBLICATION_CHECKLIST.md) and [Third-party notices](THIRD_PARTY_NOTICES.md).
+Windows build scripts live in `packaging/windows/`. They are starting points for a source-based build; the separate v2.4.2 installer remains a pre-release, not a pre-audited binary distribution. Before distributing an installer, independently test it on a clean Windows machine and review the exact bundled dependency licenses and LGPL obligations. See [Public release checklist](PUBLICATION_CHECKLIST.md) and [Third-party notices](THIRD_PARTY_NOTICES.md).
 
 ## Rights and limitations
 
